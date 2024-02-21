@@ -75,39 +75,22 @@
                             <span class="p-2.5  font-semibold">Teacher</span>
                             <span class="p-2.5 font-semibold">Subject</span>
                             <span class="p-2.5 font-semibold">Contact</span>
-                            <span class="p-2.5  font-semibold">Actions</span>
+                     
                         </div>
 
                     </div>
 
                     <div class="teachersentries">
-                        <div class="m-5 flex overflow-x-auto rounded-lg bg-indigo-100 text-black">
                             {% for teacher in teachers %}
+                        <div class="m-5 flex overflow-x-auto rounded-lg bg-indigo-100 text-black">
                             <div id="titlesabcs" class="space-between flex text-sm w-full justify-between px-4 py-2">
                                 <span class="p-2 font-light">{{teacher.Name}}</span>
                                 <span class="p-2 font-light">{{teacher.Sub}}</span>
                                 <span class="p-2 font-light">{{teacher.Contact}}</span>
 
-
-                                <div
-                                    class="flex items-center bg-indigo-500 text-white py-2 px-2 rounded-lg focus:outline-none">
-                                    <!-- Edit Button -->
-                                    <button id="editButton"
-                                        class="bg-indigo-500 text-white py-2 px-2 rounded-lg focus:outline-none hover:bg-indigo-600hover:bg-indigo-600 hover:text-green-400">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-
-                                    <!-- Delete Button -->
-                                    <button id="deleteButton"
-                                        class="bg-indigo-500 text-white py-2 px-2 rounded-lg focus:outline-none hover:bg-indigo-600hover:bg-indigo-600 hover:text-red-400">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-
-                                </div>
-
                             </div>
-                            {% endfor %}
                         </div>
+                            {% endfor %}
 
                     </div>
                 </div>
